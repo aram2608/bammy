@@ -1,0 +1,2 @@
+# bammy
+Alignment tool
