@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+find_package(ZLIB REQUIRED)
+
 add_library(bammylib
     bammy/src/io/fastx.cpp
     bammy/src/cli/bammy.cpp
@@ -15,6 +17,8 @@ target_include_directories(bammylib
     bammy/src/io/
     bammy/src/cli/
 )
+
+target_link_libraries(bammylib PUBLIC ZLIB::ZLIB)
 
 target_compile_options(bammylib
     PRIVATE

@@ -6,8 +6,8 @@
 struct Bammy {
     Bammy();
 
-    static void run(int argc, char **argv);
-    static void help();
+    void run(int argc, char **argv);
+    void help();
 };
 
 #endif

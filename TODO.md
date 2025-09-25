@@ -5,7 +5,7 @@
 ## M0 — Project Bootstrap
 - [x] Setup repo structure (`src/`, `include/`, `tests/`, `data/`).
 - [x] Add CMake build system.
-- [x] Implement minimal CLI (cxxopts).
+- [x] Implement minimal CLI
 - [ ] FASTA/FASTQ parser stubs.
 - [ ] Output stub SAM file with minimal header.
 
