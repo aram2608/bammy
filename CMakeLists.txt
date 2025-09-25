@@ -7,11 +7,13 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_library(bammylib
     bammy/src/io/fastx.cpp
+    bammy/src/cli/bammy.cpp
 )
 
 target_include_directories(bammylib
     PUBLIC 
     bammy/src/io/
+    bammy/src/cli/
 )
 
 target_compile_options(bammylib

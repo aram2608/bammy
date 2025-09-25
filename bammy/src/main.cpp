@@ -1,8 +1,7 @@
-#include "io/fastx.hpp"
+#include "cli/bammy.hpp"
 #include <iostream>
 
-int main(int argc, char **argv) {
-    std::cout << "Hello world" << std::endl;
-    FastIO::test();
-    return 0;
+int main(int argc, char **argv) { 
+    Bammy::run(argc, argv);
+    return 0; 
 }
